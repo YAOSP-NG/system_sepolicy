@@ -13,6 +13,7 @@ userdebug_or_eng(`
   domain_auto_trans(dumpstate, su_exec, su)
   domain_auto_trans(untrusted_app, su_exec, su)
   domain_auto_trans(platform_app, su_exec, su)
+  domain_auto_trans(priv_app, su_exec, su)
   domain_auto_trans(init, su_exec, su)
   allow domain untrusted_app_devpts:chr_file { open getattr read write ioctl };
 #  allow domain platform_app_devpts:chr_file { open getattr read write ioctl };
